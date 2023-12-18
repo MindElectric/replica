@@ -1,0 +1,311 @@
+<html lang="es">
+    <head><meta charset="ISO-8859-1">
+      <title><%= title %></title>
+      <!-- <base href="/" > --><base href="/SatecAbc/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+
+<body>
+<spinner _ngcontent-c0="" backgroundcolor="#000" spinner="sk-three-bounce" _nghost-c1=""><!----></spinner>
+
+
+
+
+
+<router-outlet _ngcontent-c0=""></router-outlet><app-tecnicos-detail _nghost-c16="">
+<app-alerts _ngcontent-c16="" _nghost-c11="">
+<!---->
+
+</app-alerts>
+
+<div _ngcontent-c16="" class="container">
+  <!----><div _ngcontent-c16="" class="form-horizontal">
+
+    
+<app-alerts _ngcontent-c16="" _nghost-c11="">
+<!---->
+
+</app-alerts>
+
+
+<app-menu _ngcontent-c16="" _nghost-c13="">
+<section _ngcontent-c13="" class="container">
+  <div _ngcontent-c13="" class="container">
+    <!----><nav _ngcontent-c13="" class="navbar navbar-fixed-top">
+      <div _ngcontent-c13="" class="container-fluid">
+        <div _ngcontent-c13="" class="navbar-header">
+          <a _ngcontent-c13="" class="navbar-brand" href="#">
+            <b _ngcontent-c13="">SATEC</b> ABC</a>
+        </div>
+        <div _ngcontent-c13="" class="collapse navbar-collapse" id="navbar-1">
+          <ul _ngcontent-c13="" class="nav navbar-nav nav_menu full-width">
+            <!----><li _ngcontent-c13="" class="nav_menu" routerlinkactive="active">
+              <a _ngcontent-c13="" class="nav-item nav-link" routerlinkactive="active" href="#/Listado-usuario-tecnico">Listado Usuarios</a>
+            </li><li _ngcontent-c13="" class="nav_menu" routerlinkactive="active">
+              <a _ngcontent-c13="" class="nav-item nav-link" routerlinkactive="active" href="#/Enviar-aviso">Avisos</a>
+            </li><li _ngcontent-c13="" class="nav_menu" routerlinkactive="active">
+              <a _ngcontent-c13="" class="nav-item nav-link" routerlinkactive="active" href="#/Pre-carga">Pre-carga</a>
+            </li><li _ngcontent-c13="" class="nav_menu" routerlinkactive="active">
+              <a _ngcontent-c13="" class="nav-item nav-link" routerlinkactive="active" href="#/Registro-usuario-tecnico">Alta Tecnicos</a>
+            </li>
+          </ul>
+          <!---->
+          <!----><ul _ngcontent-c13="" class="nav navbar-nav navbar-right">
+            <li _ngcontent-c13="" id="user">
+              <b _ngcontent-c13="">Bienvenido:</b> <span _ngcontent-c13="" aria-hidden="true" class="glyphicon glyphicon-user" title="CarlosArtur3168"></span> CARLOS ARTURO TORRUCO DOMINGUEZ
+              <b _ngcontent-c13=""> / Perfil: </b><span _ngcontent-c13="" aria-hidden="true" class="glyphicon glyphicon-briefcase"></span> ADMINISTRADOR FILIAL
+              <button _ngcontent-c13="" class="btn-danger" routerlink="/Login" title="Cerrar Sesión" type="button" tabindex="0">
+                <span _ngcontent-c13="" aria-hidden="true" class="glyphicon glyphicon-off"></span>
+              </button>
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</section></app-menu>
+<link _ngcontent-c16="" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div _ngcontent-c16="" class="container">
+  <br _ngcontent-c16="">
+  <br _ngcontent-c16="">
+  <br _ngcontent-c16="">
+  <h3 _ngcontent-c16="" class="text-center">Editar Usuario</h3>
+</div>
+
+<div _ngcontent-c16="" class="container">
+  
+    <!--Form start  -->
+    <form action="/update/<%= user._id %>" method="post" id="add-form" class="custom-form">
+
+    
+
+    
+    <div _ngcontent-c16="" class="form-group">
+      <label _ngcontent-c16="" class="control-label col-md-3" for="username">Usuario: <label _ngcontent-c16="" style="color:red">*</label></label>
+      <div _ngcontent-c16="" class="col-md-6">
+        <input name="username" id="username" _ngcontent-c16=""  class="form-control ng-untouched ng-pristine" placeholder="nombre de usuario" value="<%= user.username %>" required="" type="text" >
+      </div>
+    </div>
+
+  
+
+    
+    <!---->
+
+    
+    <div _ngcontent-c16="" class="form-group">
+      <label _ngcontent-c16="" class="control-label col-md-3" for="">Nombre: <label _ngcontent-c16="" style="color:red">*</label></label>
+      <div _ngcontent-c16="" class="col-md-6">
+        <input name="name" _ngcontent-c16="" change="javascript:this.value=this.value.toUpperCase();" class="form-control ng-untouched ng-pristine"  maxlength="50" minlength="3"  onkeyup="javascript:this.value=this.value.toUpperCase();" pattern="^[a-zA-Z0-9\s]+$" placeholder="nombre" value="<%= user.name %>" required="" style="text-transform:uppercase;" type="text" disabled="">
+        <div _ngcontent-c16="" class="alert alert-danger" hidden="">
+          El campo nombre es obligatorio y ser alfanumerico!
+        </div>
+      </div>
+    </div>
+
+    
+    <!----><div _ngcontent-c16="" class="form-group">
+      <label _ngcontent-c16="" class="control-label col-md-3" for="selectHabilidad">Habilidades:<label _ngcontent-c16="" style="color:red">*</label></label>
+      <div _ngcontent-c16="" class="col-md-6">
+        <select name="habilidad" _ngcontent-c16="" class="form-control ng-untouched ng-pristine ng-valid" >
+  <option _ngcontent-c16="" value="Seleccione una habilidad" <%= user.habilidad == 0 ? 'selected' : '' %>>Seleccione una habilidad</option>
+  <option _ngcontent-c16="" value="FIBRA" <%= user.habilidad == "FIBRA" ? 'selected' : '' %>>FIBRA</option>
+  <option _ngcontent-c16="" value="COBRE" <%= user.habilidad == "COBRE" ? 'selected' : '' %>>COBRE</option>
+  <option _ngcontent-c16="" value="FIBRA-COBRE" <%= user.habilidad == 'FIBRA-COBRE' ? 'selected' : '' %>>FIBRA-COBRE</option>
+</select>
+
+        <div _ngcontent-c16="" class="alert alert-danger" hidden="">
+          El combo Habilidad es obligatorio!
+        </div>
+      </div>
+    </div>
+    <!---->
+
+    
+
+    <!----><div _ngcontent-c16="" class="form-group">
+        <label _ngcontent-c16="" class="control-label col-md-3" for="modalidad">Modalidad:
+            <label _ngcontent-c16="" style="color:red" title="tipo de modalidad">*</label>
+        </label>
+        <div _ngcontent-c16="" class="col-md-6">
+          <select name="modalidad" _ngcontent-c16="" class="form-control ng-untouched ng-pristine ng-valid"  required="">
+  <option _ngcontent-c16="" value="Seleccionar Modalidad" <%= user.modalidad == 0 ? 'selected' : '' %>>Seleccionar Modalidad</option>
+  <option _ngcontent-c16="" value="DINAMICO" <%= user.modalidad == 'DINAMICO' ? 'selected' : '' %>>DINAMICO</option>
+  <option _ngcontent-c16="" value="FIJO" <%= user.modalidad == 'FIJO' ? 'selected' : '' %>>FIJO</option>
+  <option _ngcontent-c16="" value="GEORREFERENCIA" <%= user.modalidad == 'GEORREFERENCIA' ? 'selected' : '' %>>GEORREFERENCIA</option>
+  <option _ngcontent-c16="" value="MASI" <%= user.modalidad == 'MASI' ? 'selected' : '' %>>MASI</option>
+  <option _ngcontent-c16="" value="NO DISPONIBLE" <%= user.modalidad == 'NO DISPONIBLE' ? 'selected' : '' %>>NO DISPONIBLE</option>
+  <option _ngcontent-c16="" value="TECNICO PREFERIDO" <%= user.modalidad == 'TECNICO PREFERIDO' ? 'selected' : '' %>>TECNICO PREFERIDO</option>
+  <option _ngcontent-c16="" value="VOLUMEN" <%= user.modalidad == 'VOLUMEN' ? 'selected' : '' %>>VOLUMEN</option>
+</select>
+
+             <div _ngcontent-c16="" class="alert alert-danger" hidden="">
+                 Debe seleccionar una Modalidad!
+            </div>
+     
+         </div>
+     </div>
+
+  
+
+    
+
+
+    
+    
+  <!----><div _ngcontent-c16="" class="form-group">
+      <label _ngcontent-c16="" class="control-label col-md-3" for="selectArea">Área:<label _ngcontent-c16="" style="color:red">*</label></label>
+      <div _ngcontent-c16="" class="col-md-6">
+        <!---->
+
+        <select name="area" _ngcontent-c16="" class="form-control ng-untouched ng-pristine ng-valid" >
+  <option _ngcontent-c16="" value="0" <%= user.area == 0 ? 'selected' : '' %>>Seleccionar Área</option>
+  <option _ngcontent-c16="" value="CANCUN" <%= user.area == 'CANCUN' ? 'selected' : '' %>>CANCUN</option>
+  <option _ngcontent-c16="" value="MERIDA" <%= user.area == 'MERIDA' ? 'selected' : '' %>>MERIDA</option>
+  <option _ngcontent-c16="" value="OAXACA" <%= user.area == 'OAXACA' ? 'selected' : '' %>>OAXACA</option>
+  <option _ngcontent-c16="" value="TUXTLA GUTIERREZ" <%= user.area == 'TUXTLA GUTIERREZ' ? 'selected' : '' %>>TUXTLA GUTIERREZ</option>
+  <option _ngcontent-c16="" value="VILLAHERMOSA" <%= user.area == 'VILLAHERMOSA' ? 'selected' : '' %>>VILLAHERMOSA</option>
+</select>
+
+
+
+        <!---->
+        <!---->
+
+        <div _ngcontent-c16="" class="alert alert-danger" hidden="">
+          Debe seleccionar una Área!
+        </div>
+      </div>
+    </div>
+
+    
+    
+        <!----><div _ngcontent-c16="" class="form-group">
+      <label _ngcontent-c16="" class="control-label col-md-3" for="selectCope">Cope:<label _ngcontent-c16="" style="color:red">*</label></label>
+      <div _ngcontent-c16="" class="col-md-6">
+          <select name="cope" _ngcontent-c16="" class="form-control ng-untouched ng-pristine ng-valid" >
+    <option _ngcontent-c16="" value="0" <%= user.cope == 0 ? 'selected' : '' %>>Seleccionar Cope</option>
+    <option _ngcontent-c16="" value="CT ARRIAGA" <%= user.cope == 'CT ARRIAGA' ? 'selected' : '' %>>CT ARRIAGA</option>
+    <option _ngcontent-c16="" value="CT COMITAN" <%= user.cope == 'CT COMITAN' ? 'selected' : '' %>>CT COMITAN</option>
+    <option _ngcontent-c16="" value="CT SAN CRISTOBAL DE LAS CASAS" <%= user.cope == 'CT SAN CRISTOBAL DE LAS CASAS' ? 'selected' : '' %>>CT SAN CRISTOBAL DE LAS CASAS</option>
+    <option _ngcontent-c16="" value="CT TAPACHULA" <%= user.cope == 'CT TAPACHULA' ? 'selected' : '' %>>CT TAPACHULA</option>
+    <option _ngcontent-c16="" value="CT TUXTLA GUTIERREZ" <%= user.cope == 'CT TUXTLA GUTIERREZ' ? 'selected' : '' %>>CT TUXTLA GUTIERREZ</option>
+  </select>
+
+
+        <!---->
+        
+        
+        
+        <div _ngcontent-c16="" class="alert alert-danger" hidden="">
+          Debe seleccionar un Cope!
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+    <div _ngcontent-c16="" class="form-group">
+      <div _ngcontent-c16="" class="col-md-4 col-md-offset-4">
+        
+        <button _ngcontent-c16="" class="btn btn-primary" type="button" tabindex="0">
+          <span _ngcontent-c16="" aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> Regresar
+        </button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button _ngcontent-c16="" class="btn btn-success" type="button" tabindex="0">
+          <span _ngcontent-c16="" aria-hidden="true" class="glyphicon glyphicon-eye-open"></span> Ver
+        </button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button _ngcontent-c16="" class="btn btn-danger" type="submit" name="submit" value="guardar">
+  <span _ngcontent-c16="" aria-hidden="true" class="glyphicon glyphicon-floppy-saved"></span> Guardar
+</button>
+
+      </div>
+    </div>
+    <br _ngcontent-c16="">
+    <br _ngcontent-c16="">
+    </form>
+
+  <!-- Form end -->
+</div>
+
+
+<div _ngcontent-c16="" aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="miModalAgregar" role="dialog" tabindex="-1">
+  <div _ngcontent-c16="" class="modal-dialog" role="document">
+    <div _ngcontent-c16="" class="modal-content">
+      <div _ngcontent-c16="" class="modal-header">
+        <button _ngcontent-c16="" aria-label="Close" class="close" data-dismiss="modal" type="button">
+          <span _ngcontent-c16="" aria-hidden="true">×</span>
+        </button>
+        <h4 _ngcontent-c16="" class="modal-title" id="myModalLabel">Agregar Atributos</h4>
+      </div>
+      <div _ngcontent-c16="" class="modal-body">
+        <form _ngcontent-c16="" action="" class="form-horizontal ng-untouched ng-pristine ng-valid" novalidate="">
+
+          <div _ngcontent-c16="" class="form-group">
+            <label _ngcontent-c16="" class="control-label col-md-3" for="selectTipoMenu">Atributo:</label>
+            <div _ngcontent-c16="" class="col-md-6">
+              <input _ngcontent-c16="" class="form-control" id="nombre-atributo" placeholder="Atributo" type="text">
+            </div>
+          </div>
+
+          <div _ngcontent-c16="" class="form-group">
+            <label _ngcontent-c16="" class="control-label col-md-3" for="selectTipoMenu">Valor:</label>
+            <div _ngcontent-c16="" class="col-md-6">
+              <input _ngcontent-c16="" class="form-control" id="nombre-valor" placeholder="Valor" type="text">
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <div _ngcontent-c16="" class="modal-footer">
+        <button _ngcontent-c16="" class="btn btn-default" data-dismiss="modal" type="button">Cancelar</button>
+        <button _ngcontent-c16="" class="btn btn-primary " data-dismiss="modal" id="myButton" type="button">Agregar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div _ngcontent-c16="" aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="miModalReiniciaContrasenia" role="dialog" tabindex="-1">
+  <div _ngcontent-c16="" class="modal-dialog" role="document">
+    <div _ngcontent-c16="" class="modal-content">
+      <div _ngcontent-c16="" class="modal-header">
+        <button _ngcontent-c16="" aria-label="Close" class="close" data-dismiss="modal" type="button">
+          <span _ngcontent-c16="" aria-hidden="true">×</span>
+        </button>
+        <h4 _ngcontent-c16="" class="modal-title" id="myModalLabel">Reiniciar Contraseña</h4>
+      </div>
+      <div _ngcontent-c16="" class="modal-body">
+        <p _ngcontent-c16="">Seguro que quiere reiniciar la contraseña al Usuario?</p>
+
+        <div _ngcontent-c16="" class="form-group">
+          <div _ngcontent-c16="" class="col-md-2 col-md-offset-2">
+
+          </div>
+        </div>
+      </div>
+      <div _ngcontent-c16="" class="modal-footer">
+        <button _ngcontent-c16="" class="btn btn-default" data-dismiss="modal" type="button">Cancelar</button>
+        <button _ngcontent-c16="" class="btn btn-primary " data-dismiss="modal" id="myButton" type="button">Reiniciar</button>
+      </div>
+    </div>
+  </div>
+</div></div></div></app-tecnicos-detail>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"><script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> --><!-- <link rel="stylesheet" href="node_modules/ngx-snackbar/bundles/style.css"> --><!-- Footer --><footer class="footer page-footer font-small blue fixed-bottom"><a href="#">SATEC ABC </a>Version: 12.8 DMZ</footer><!-- Footer --><script type="text/javascript" src="inline.4368bfc345ad450705f9.bundle.js"></script><script type="text/javascript" src="polyfills.1524cc4eb18d40fedd11.bundle.js"></script><script type="text/javascript" src="scripts.28f79846239e18912ef3.bundle.js"></script><script type="text/javascript" src="main.e97d5d59565eb89ff4a5.bundle.js"></script></body></html>

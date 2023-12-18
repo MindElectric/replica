@@ -1,0 +1,497 @@
+<html lang="es">
+    <head><meta charset="ISO-8859-1">
+        <title><%= title %></title>
+        <!-- <base href="/" > --><base href="/SatecAbc/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="styles.46c10c32d3eb747547cd.bundle.css" rel="stylesheet"><style>@-webkit-keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}body.swal2-toast-shown .swal2-container{position:fixed;background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-shown{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;box-shadow:0 0 .625em #d9d9d9;overflow-y:hidden}.swal2-popup.swal2-toast .swal2-header{flex-direction:row}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:initial;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon-text{font-size:2em;font-weight:700;line-height:1em}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{height:auto;margin:0 .3125em}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 .0625em #fff,0 0 0 .125em rgba(50,100,150,.4)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:2em;height:2.8125em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.25em;left:-.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:2em 2em;transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;-webkit-transform-origin:0 2em;transform-origin:0 2em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:showSweetToast .5s;animation:showSweetToast .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:hideSweetToast .2s forwards;animation:hideSweetToast .2s forwards}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:animate-toast-success-tip .75s;animation:animate-toast-success-tip .75s}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:animate-toast-success-long .75s;animation:animate-toast-success-long .75s}@-webkit-keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%
+        {-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@-webkit-keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-shown{top:auto;right:auto;bottom:auto;left:auto;background-color:transparent}body.swal2-no-backdrop .swal2-shown>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-shown.swal2-top{top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-top-left,body.swal2-no-backdrop .swal2-shown.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-top-end,body.swal2-no-backdrop .swal2-shown.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-shown.swal2-center{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-left,body.swal2-no-backdrop .swal2-shown.swal2-center-start{top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-end,body.swal2-no-backdrop .swal2-shown.swal2-center-right{top:50%;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom{bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom-left,body.swal2-no-backdrop .swal2-shown.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-bottom-end,body.swal2-no-backdrop .swal2-shown.swal2-bottom-right{right:0;bottom:0}.swal2-container{display:flex;position:fixed;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:10px;background-color:transparent;z-index:1060;overflow-x:hidden;-webkit-overflow-scrolling:touch}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-container.swal2-fade{transition:background-color .1s}.swal2-container.swal2-shown{background-color:rgba(0,0,0,.4)}.swal2-popup{display:none;position:relative;flex-direction:column;justify-content:center;width:32em;max-width:100%;padding:1.25em;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem;box-sizing:border-box}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-popup .swal2-header{display:flex;flex-direction:column;align-items:center}.swal2-popup .swal2-title{display:block;position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-popup .swal2-actions{flex-wrap:wrap;align-items:center;justify-content:center;margin:1.25em auto 0;z-index:1}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-confirm{width:2.5em;height:2.5em;margin:.46875em;padding:0;border:.25em solid transparent;border-radius:100%;border-color:transparent;background-color:transparent!important;color:transparent;cursor:default;box-sizing:border-box;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-cancel{margin-right:30px;margin-left:30px}.swal2-popup .swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after{display:inline-block;width:15px;height:15px;margin-left:5px;border:3px solid #999;border-radius:50%;border-right-color:transparent;box-shadow:1px 1px 1px #fff;content:'';-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal}.swal2-popup .swal2-styled{margin:.3125em;padding:.625em 2em;font-weight:500;box-shadow:none}.swal2-popup .swal2-styled:not([disabled]){cursor:pointer}.swal2-popup .swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#3085d6;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#aaa;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled:focus{outline:0;box-shadow:0 0 0 2px #fff,0 0 0 4px rgba(50,100,150,.4)}.swal2-popup .swal2-styled::-moz-focus-inner{border:0}.swal2-popup .swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-popup .swal2-image{max-width:100%;margin:1.25em auto}.swal2-popup .swal2-close{position:absolute;top:0;right:0;justify-content:center;width:1.2em;height:1.2em;padding:0;transition:color .1s ease-out;border:none;border-radius:0;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer;overflow:hidden}.swal2-popup .swal2-close:hover{-webkit-transform:none;transform:none;color:#f27474}.swal2-popup>.swal2-checkbox,.swal2-popup>.swal2-file,.swal2-popup>.swal2-input,.swal2-popup>.swal2-radio,.swal2-popup>.swal2-select,.swal2-popup>.swal2-textarea{display:none}.swal2-popup .swal2-content{justify-content:center;margin:0;padding:0;color:#545454;font-size:1.125em;font-weight:300;line-height:normal;z-index:1;word-wrap:break-word}.swal2-popup #swal2-content{text-align:center}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-radio,.swal2-popup .swal2-select,.swal2-popup .swal2-textarea{margin:1em auto}.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-textarea{width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;font-size:1.125em;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);box-sizing:border-box}.swal2-popup .swal2-file.swal2-inputerror,.swal2-popup .swal2-input.swal2-inputerror,.swal2-popup 
+        .swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-popup .swal2-file:focus,.swal2-popup .swal2-input:focus,.swal2-popup .swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 3px #c4e6f5}.swal2-popup .swal2-file::-webkit-input-placeholder,.swal2-popup .swal2-input::-webkit-input-placeholder,.swal2-popup .swal2-textarea::-webkit-input-placeholder{color:#ccc}.swal2-popup .swal2-file:-ms-input-placeholder,.swal2-popup .swal2-input:-ms-input-placeholder,.swal2-popup .swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::-ms-input-placeholder,.swal2-popup .swal2-input::-ms-input-placeholder,.swal2-popup .swal2-textarea::-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::placeholder,.swal2-popup .swal2-input::placeholder,.swal2-popup .swal2-textarea::placeholder{color:#ccc}.swal2-popup .swal2-range input{width:80%}.swal2-popup .swal2-range output{width:20%;font-weight:600;text-align:center}.swal2-popup .swal2-range input,.swal2-popup .swal2-range output{height:2.625em;margin:1em auto;padding:0;font-size:1.125em;line-height:2.625em}.swal2-popup .swal2-input{height:2.625em;padding:0 .75em}.swal2-popup .swal2-input[type=number]{max-width:10em}.swal2-popup .swal2-file{font-size:1.125em}.swal2-popup .swal2-textarea{height:6.75em;padding:.75em}.swal2-popup .swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;color:#545454;font-size:1.125em}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-radio{align-items:center;justify-content:center}.swal2-popup .swal2-checkbox label,.swal2-popup .swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-popup .swal2-checkbox input,.swal2-popup .swal2-radio input{margin:0 .4em}.swal2-popup .swal2-validation-message{display:none;align-items:center;justify-content:center;padding:.625em;background:#f0f0f0;color:#666;font-size:1em;font-weight:300;overflow:hidden}.swal2-popup .swal2-validation-message::before{display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center;content:'!';zoom:normal}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-moz-document url-prefix(){.swal2-close:focus{outline:2px solid rgba(50,100,150,.4)}}.swal2-icon{position:relative;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;line-height:5em;cursor:default;box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;zoom:normal}.swal2-icon-text{font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:3.75em 3.75em;transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 3.75em;transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;top:-.25em;left:-.25em;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%;z-index:2;box-sizing:content-box}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;top:.5em;left:1.625em;width:.4375em;height:5.625em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);z-index:1}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;height:.3125em;border-radius:.125em;background-color:#a5dc86;z-index:2}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.875em;width:1.5625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-progresssteps{align-items:center;margin:0 0 1.25em;padding:0;font-weight:600}.swal2-progresssteps li{display:inline-block;position:relative}.swal2-progresssteps .swal2-progresscircle{width:2em;height:2em;border-radius:2em;background:#3085d6;color:#fff;line-height:2em;text-align:center;z-index:20}.swal2-progresssteps .swal2-progresscircle:first-child{margin-left:0}.swal2-progresssteps .swal2-progresscircle:last-child{margin-right:0}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep{background:#3085d6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progresscircle{background:#add8e6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progressline{background:#add8e6}.swal2-progresssteps .swal2-progressline{width:2.5em;height:.4em;margin:0 -1px;background:#3085d6;z-index:10}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-show.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-hide.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-animate-success-icon .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-animate-error-icon{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-animate-error-icon .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}@-webkit-keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:initial!important}}</style><style>header[_ngcontent-c0]{background:#19a5e6}.jumbotron[_ngcontent-c0]{background:#428bca;color:#fff;padding:5px 0;margin:0}</style><style>#spinner[_ngcontent-c1]{top:0;left:0;height:100%;width:100%;position:fixed;z-index:9999;opacity:.7;background-color:#f1f1f1;display:flex;align-items:center;justify-content:center}  .colored-parent,   .colored>div{background-color:#333}</style><style>#header[_ngcontent-c10]{border-top-left-radius:25px;border-top-right-radius:25px}#footer[_ngcontent-c10], #header[_ngcontent-c10]{background:#0b4475}#footer[_ngcontent-c10]{border-bottom-left-radius:25px;border-bottom-right-radius:25px}h1[_ngcontent-c10], h2[_ngcontent-c10], h3[_ngcontent-c10], h4[_ngcontent-c10], label[_ngcontent-c10]{color:#fff}h1[_ngcontent-c10], h3[_ngcontent-c10]{margin:0}#leyenda[_ngcontent-c10]{color:red}</style><style></style><style>.sk-three-bounce[_ngcontent-c7]{top:50%;position:relative;margin:auto;width:80px;text-align:center}.sk-three-bounce[_ngcontent-c7]   .sk-child[_ngcontent-c7]{width:20px;height:20px;border-radius:100%;display:inline-block;-webkit-animation:sk-three-bounce 1.4s ease-in-out 0s infinite both;animation:sk-three-bounce 1.4s ease-in-out 0s infinite both}.sk-three-bounce[_ngcontent-c7]   .sk-bounce1[_ngcontent-c7]{-webkit-animation-delay:-.32s;animation-delay:-.32s}.sk-three-bounce[_ngcontent-c7]   .sk-bounce2[_ngcontent-c7]{-webkit-animation-delay:-.16s;animation-delay:-.16s}@-webkit-keyframes sk-three-bounce{0%,100%,80%{-webkit-transform:scale(0);transform:scale(0)}40%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes sk-three-bounce{0%,100%,80%{-webkit-transform:scale(0);transform:scale(0)}40%{-webkit-transform:scale(1);transform:scale(1)}}</style><style>#navbar-1[_ngcontent-c13], .nav[_ngcontent-c13], .navbar[_ngcontent-c13], .navbar-fixed-top[_ngcontent-c13]{background:#fff;border-bottom-color:#337ab7}.nav[_ngcontent-c13] > li[_ngcontent-c13] > a[_ngcontent-c13]:focus, .nav[_ngcontent-c13] > li[_ngcontent-c13] > a[_ngcontent-c13]:hover, .nav[_ngcontent-c13] > li[_ngcontent-c13] > ul[_ngcontent-c13] > li[_ngcontent-c13] > a[_ngcontent-c13]:focus, .nav[_ngcontent-c13] > 
+        li[_ngcontent-c13] > ul[_ngcontent-c13] > li[_ngcontent-c13] > a[_ngcontent-c13]:hover{text-decoration:none;color:#fff;background-color:#337ab7}.nav[_ngcontent-c13] > li[_ngcontent-c13] > ul[_ngcontent-c13] > li[_ngcontent-c13] > a[_ngcontent-c13]:focus, .nav[_ngcontent-c13] > li[_ngcontent-c13] > ul[_ngcontent-c13] > li[_ngcontent-c13] > a[_ngcontent-c13]:hover{border-radius:64px}.navbar-brand[_ngcontent-c13]{margin-left:-15px;background:#337ab7;color:#fff}#user[_ngcontent-c13]{padding-top:15px}</style><style>.scroll-to-top[_ngcontent-c14]{position:fixed;bottom:15px;right:15px;opacity:0}.scroll-to-top[_ngcontent-c14], .show-scroll[_ngcontent-c14]{transition:all .2s ease-in-out}.show-scroll[_ngcontent-c14]{opacity:1}</style><style>.description[_ngcontent-c15], .numbers[_ngcontent-c15]{width:600px;text-align:center;-ms-flex-line-pack:center;align-content:center}</style></head><body><app-root _nghost-c0="" ng-version="5.2.7">
+<spinner _ngcontent-c0="" backgroundcolor="#000" spinner="sk-three-bounce" _nghost-c1=""><!----></spinner>
+
+
+
+
+
+<router-outlet _ngcontent-c0=""></router-outlet><app-listado-usuario-tecnico _nghost-c14="">
+<app-alerts _ngcontent-c14="" _nghost-c11="">
+<!---->
+
+</app-alerts>
+
+
+<app-menu _ngcontent-c14="" _nghost-c13="">
+<section _ngcontent-c13="" class="container">
+  <div _ngcontent-c13="" class="container">
+    <!----><nav _ngcontent-c13="" class="navbar navbar-fixed-top">
+      <div _ngcontent-c13="" class="container-fluid">
+        <div _ngcontent-c13="" class="navbar-header">
+          <a _ngcontent-c13="" class="navbar-brand" href="#">
+            <b _ngcontent-c13="">SATEC</b> ABC</a>
+        </div>
+        <div _ngcontent-c13="" class="collapse navbar-collapse" id="navbar-1">
+          <ul _ngcontent-c13="" class="nav navbar-nav nav_menu full-width">
+            <!----><li _ngcontent-c13="" class="nav_menu active" routerlinkactive="active">
+              <a _ngcontent-c13="" class="nav-item nav-link active" routerlinkactive="active" href="/list">Listado Usuarios</a>
+            </li><li _ngcontent-c13="" class="nav_menu" routerlinkactive="active">
+              <a _ngcontent-c13="" class="nav-item nav-link" routerlinkactive="active" href="#/Enviar-aviso">Avisos</a>
+            </li><li _ngcontent-c13="" class="nav_menu" routerlinkactive="active">
+              <a _ngcontent-c13="" class="nav-item nav-link" routerlinkactive="active" href="#/Pre-carga">Pre-carga</a>
+            </li><li _ngcontent-c13="" class="nav_menu" routerlinkactive="active">
+              <a _ngcontent-c13="" class="nav-item nav-link" routerlinkactive="active" href="#/Registro-usuario-tecnico">Alta Tecnicos</a>
+            </li>
+          </ul>
+          <!---->
+          <!----><ul _ngcontent-c13="" class="nav navbar-nav navbar-right">
+            <li _ngcontent-c13="" id="user">
+              <b _ngcontent-c13="">Bienvenido:</b> <span _ngcontent-c13="" aria-hidden="true" class="glyphicon glyphicon-user" title="CarlosArtur3168"></span> CARLOS ARTURO TORRUCO DOMINGUEZ
+              <b _ngcontent-c13=""> / Perfil: </b><span _ngcontent-c13="" aria-hidden="true" class="glyphicon glyphicon-briefcase"></span> ADMINISTRADOR FILIAL
+              <button _ngcontent-c13="" class="btn-danger"  onclick="redirectTo('/')" title="Cerrar Sesión" type="button" tabindex="0">
+                <span _ngcontent-c13="" aria-hidden="true" class="glyphicon glyphicon-off"></span>
+              </button>
+              <script>
+  function redirectTo(url) {
+    window.location.href = url;
+  }
+</script>
+              
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</section></app-menu>
+
+<div _ngcontent-c14="" class="container">
+  <br _ngcontent-c14="">
+  <br _ngcontent-c14="">
+  <br _ngcontent-c14="">
+  <h3 _ngcontent-c14="" class="text-center">Usuarios</h3>
+</div>
+
+
+<div _ngcontent-c14="" class="container">
+  <div _ngcontent-c14="" class="row">
+    <div _ngcontent-c14="" class="col-md-6 col-md-offset-8">
+      <div _ngcontent-c14="" class="input-group">
+        <div _ngcontent-c14="" class="input-group">
+          <form _ngcontent-c14="" novalidate="" class="ng-untouched ng-pristine ng-invalid" action="/search" method="post">
+            <span _ngcontent-c14="" class="input-group-addon">
+              <select _ngcontent-c14="" class="form-control col-md-2 ng-untouched ng-pristine ng-valid" id="basic-addon1" name="sistema" style="width: 150px;">
+                
+                <option _ngcontent-c14="" value="0">Nombre</option>
+                <option _ngcontent-c14="" value="expediente">Expediente</option>
+                <option _ngcontent-c14="" value="username">Usuario</option>
+                <option _ngcontent-c14="" value="empresa">Empresa</option>
+                <option _ngcontent-c14="" value="sistema">Sistema</option>
+                <option _ngcontent-c14="" value="perfil">Perfil</option>
+                <option _ngcontent-c14="" value="division">División</option>
+                <option _ngcontent-c14="" value="area">Área</option>
+                <option _ngcontent-c14="" value="mac">Mac</option>
+                <option _ngcontent-c14="" value="cope">Cope</option>
+                <option _ngcontent-c14="" value="telEmpresa">Tel. móvil Empresa </option>
+              </select>
+            </span>
+            <span _ngcontent-c14="" class="input-group-addon">
+              <span _ngcontent-c14="" class="input-group-btn ">
+                <input _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-invalid" id="txtBuscar" maxlength="17" minlength="1" name="txtBuscar" placeholder="Buscar" required="" style="width: 150px;">
+              </span>
+              <span _ngcontent-c14="" class="input-group-btn">
+                <button _ngcontent-c14="" class="btn btn-primary" for="search-box" type="submit">
+                  <span _ngcontent-c14="" class="glyphicon glyphicon-search"></span>
+                </button>
+                <button _ngcontent-c14="" class="btn btn-danger" for="search-box" type="reset" disabled="">
+                  <span _ngcontent-c14="" class="glyphicon glyphicon-trash"></span>
+                </button>
+              </span>
+            </span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!----><div _ngcontent-c14="" class="">
+  
+  <div _ngcontent-c14="" class="row">
+    <div _ngcontent-c14="" class="col-md-10 col-md-offset-1">
+      <% if (users != '') { %>
+        <table _ngcontent-c14="" class="table table-hover table-condensed">
+        <thead _ngcontent-c14="">
+          <tr _ngcontent-c14="">
+            
+            <th _ngcontent-c14="">Estatus</th>
+            <th _ngcontent-c14="">Perfil</th>
+            <th _ngcontent-c14="">Disponibilidad</th>
+            <!-- <th _ngcontent-c14="">Expediente</th> -->
+            <th _ngcontent-c14="">Nombre </th>
+            <th _ngcontent-c14="">Usuario</th>
+            <th _ngcontent-c14="">Tipo</th>
+            <!-- <th _ngcontent-c14="">Empresa</th> -->
+            <th _ngcontent-c14="">Sistema</th>
+            <!-- <th _ngcontent-c14="">División</th> -->
+            <th _ngcontent-c14="">Área</th>
+            <th _ngcontent-c14="">Cope</th>
+            <th _ngcontent-c14="">Modalidad</th>
+            <th _ngcontent-c14="">Habilidad</th>
+            <!----><th _ngcontent-c14="">Ver</th>
+            <!----><th _ngcontent-c14="">Editar</th>
+            <!----><th _ngcontent-c14="">Zonas</th>
+            <th _ngcontent-c14="">Habilitar</th>
+            <!----><th _ngcontent-c14="">Pass</th>
+            <!----><th _ngcontent-c14="">MAC</th>
+            <!----><th _ngcontent-c14="">Eliminar</th>
+          </tr>
+        </thead>
+        <tbody _ngcontent-c14="">
+          <!---->
+          <% users.forEach(row => { %>
+           <tr _ngcontent-c14="">
+            
+            
+            <td _ngcontent-c14="">Activo</td>
+            <td _ngcontent-c14="">TECNICO PIC</td>
+            <td _ngcontent-c14="">DISPONIBLE</td>
+            <!-- <td _ngcontent-c14="">00255531</td> -->
+            
+            <td _ngcontent-c14=""><%= row.name %></td>
+            <td _ngcontent-c14=""><%= row.username %></td>
+            <td _ngcontent-c14="">TECNICO</td>
+            <!-- <td _ngcontent-c14="">HTM[Helicom]</td> -->
+            <td _ngcontent-c14="">PIC</td>
+            <!-- <td _ngcontent-c14="">SURESTE</td> -->
+            <td _ngcontent-c14=""><%= row.area %></td>
+            <td _ngcontent-c14=""><%= row.cope %></td>
+            <!----><td _ngcontent-c14=""><%= row.modalidad %></td>
+            <!---->
+            <!----><td _ngcontent-c14="" data-toggle="tooltip" title="FIBRA-COBRE"><%= row.habilidad %></td>
+            <!---->
+
+            <!----><td _ngcontent-c14="">
+              <button _ngcontent-c14="" class="btn btn-success" type="button" tabindex="0">
+                <span _ngcontent-c14="" aria-hidden="true" class="glyphicon glyphicon-eye-open"></span>
+              </button>
+            </td>
+            <!----><td _ngcontent-c14="">
+              <a href="/edit/<%= row._id %>" class="btn btn-primary" role="button">
+  <span aria-hidden="true" class="glyphicon glyphicon-edit"></span>
+</a>
+
+            </td>
+            <!----><td _ngcontent-c14="">
+              <button _ngcontent-c14="" class="btn btn-warning" type="button" tabindex="0" title="Zonificación de técnico PIC">
+                <span _ngcontent-c14="" aria-hidden="true" class="glyphicon glyphicon-pencil"></span>
+              </button>
+            </td>
+
+            
+            <!----><td _ngcontent-c14="" class="text-center">
+              <!---->
+              <!----><button _ngcontent-c14="" class="btn btn-active" data-target="#miModalInhabilitar" data-toggle="modal" title="Inactivar" type="button">
+                <span _ngcontent-c14="" aria-hidden="true" class="glyphicon glyphicon-ban-circle"></span>
+              </button>
+            </td>
+            <!---->
+            
+
+            <!----><td _ngcontent-c14="" class="text-center">
+              <button _ngcontent-c14="" class="btn btn-default" data-target="#miModalReiniciaContrasenia" data-toggle="modal" title="Reiniciar Contraseña" type="button">
+                <span _ngcontent-c14="" aria-hidden="true" class="glyphicon glyphicon-repeat"></span>
+              </button>
+            </td>
+            <!----><td _ngcontent-c14="" class="text-center">
+              <button _ngcontent-c14="" class="btn btn-warning" data-target="#miModalReiniciaMac" data-toggle="modal" title="Reiniciar MAC ADDRESS" type="button">
+                <span _ngcontent-c14="" aria-hidden="true" class="glyphicon glyphicon-refresh"></span>
+              </button>
+            </td>
+            <!----><td _ngcontent-c14="">
+              <button _ngcontent-c14="" class="btn btn-danger" data-target="#miModalEliminacion" data-toggle="modal" type="button">
+                <span _ngcontent-c14="" aria-hidden="true" class="glyphicon glyphicon-remove"></span>
+              </button>
+            </td>
+
+            
+            
+          </tr>
+          <% }) %>
+          <tr _ngcontent-c14="">
+            <td _ngcontent-c14="" align="center" colspan="19">
+              <button _ngcontent-c14="" class="btn btn-default" type="button">CSV</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <% } else { %>
+        <h1 class="text-center text-secondary mt-5">No se encontro usuarios</h1>
+      <% } %>
+      
+    </div>
+  </div>
+
+  <br _ngcontent-c14="">
+  <br _ngcontent-c14="">
+
+  <!----><div _ngcontent-c14="" class="col-md-4 col-md-offset-4">
+    
+    <app-pagination _ngcontent-c14="" _nghost-c15=""><!----><div _ngcontent-c15="" class="center">
+	
+
+	
+
+	<div _ngcontent-c15="" class="numbers">
+		<button _ngcontent-c15="" class="btn btn-success disabled" type="button" disabled="">
+			&lt;&lt;
+		</button>
+
+		<button _ngcontent-c15="" class="btn btn-success disabled" type="button" disabled="">
+			&lt; Anterior
+		</button>
+
+		<!----><button _ngcontent-c15="" class="btn btn-success active" type="button">
+			1</button><button _ngcontent-c15="" class="btn btn-success" type="button">
+			2</button><button _ngcontent-c15="" class="btn btn-success" type="button">
+			3</button><button _ngcontent-c15="" class="btn btn-success" type="button">
+			4</button><button _ngcontent-c15="" class="btn btn-success" type="button">
+			5</button><button _ngcontent-c15="" class="btn btn-success" type="button">
+			6</button><button _ngcontent-c15="" class="btn btn-success" type="button">
+			7</button>
+
+		<button _ngcontent-c15="" class="btn btn-success" type="button">
+			Siguiente &gt;
+		</button>
+
+		<button _ngcontent-c15="" class="btn btn-success" type="button">
+			&gt;&gt;
+		</button>
+	</div>
+
+	<div _ngcontent-c15="" class="description">
+		<span _ngcontent-c15="" class="page-counts">Registros (1 a 30) de 3809 Registros.</span>
+		<span _ngcontent-c15="" class="page-totals">Total: 127 páginas</span>
+	</div>
+</div></app-pagination>
+  </div>
+
+  <!---->
+
+
+  <br _ngcontent-c14="">
+  <br _ngcontent-c14="">
+  <br _ngcontent-c14="">
+  <br _ngcontent-c14="">
+  <br _ngcontent-c14="">
+</div>
+
+
+<!---->
+
+
+<div _ngcontent-c14="" class="scroll-to-top">
+  <button _ngcontent-c14="" class="btn btn-info">
+    <span _ngcontent-c14="" class="glyphicon glyphicon-chevron-up"></span>
+  </button>
+  <br _ngcontent-c14="">
+  <br _ngcontent-c14="">
+  <br _ngcontent-c14="">
+</div>
+
+
+<div _ngcontent-c14="" aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="miModalEliminacion" role="dialog" tabindex="-1">
+  <div _ngcontent-c14="" class="modal-dialog" role="document">
+    <div _ngcontent-c14="" class="modal-content">
+      <div _ngcontent-c14="" class="modal-header">
+        <button _ngcontent-c14="" aria-label="Close" class="close" data-dismiss="modal" type="button">
+          <span _ngcontent-c14="" aria-hidden="true">×</span>
+        </button>
+        <h4 _ngcontent-c14="" class="modal-title" id="myModalLabel">Eliminar Usuario</h4>
+      </div>
+      <div _ngcontent-c14="" class="modal-body">
+        <p _ngcontent-c14="">¿Seguro que quiere eliminar al <br _ngcontent-c14=""> Usuario: , con expediente:
+          ?
+        </p>
+        <div _ngcontent-c14="" class="form-group">
+          <div _ngcontent-c14="" class="col-md-2 col-md-offset-2">
+
+          </div>
+        </div>
+      </div>
+      <div _ngcontent-c14="" class="modal-footer">
+        <button _ngcontent-c14="" class="btn btn-default" data-dismiss="modal" type="button">Cancelar</button>
+        <button _ngcontent-c14="" class="btn btn-danger " data-dismiss="modal" id="myButton" type="button">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div _ngcontent-c14="" aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="miModalHabilitar" role="dialog" tabindex="-1">
+  <div _ngcontent-c14="" class="modal-dialog" role="document">
+    <div _ngcontent-c14="" class="modal-content">
+      <div _ngcontent-c14="" class="modal-header">
+        <button _ngcontent-c14="" aria-label="Close" class="close" data-dismiss="modal" type="button">
+          <span _ngcontent-c14="" aria-hidden="true">×</span>
+        </button>
+        <h4 _ngcontent-c14="" class="modal-title" id="myModalLabel">Habilitar Usuario </h4>
+      </div>
+      <div _ngcontent-c14="" class="modal-body">
+        <p _ngcontent-c14="">¿Seguro que quiere habilitar al <br _ngcontent-c14=""> Usuario: , con expediente:
+          ?
+        </p>
+        <div _ngcontent-c14="" class="form-group">
+          <div _ngcontent-c14="" class="col-md-2 col-md-offset-2">
+
+          </div>
+        </div>
+      </div>
+      <div _ngcontent-c14="" class="modal-footer">
+        <button _ngcontent-c14="" class="btn btn-default" data-dismiss="modal" type="button">Cancelar</button>
+
+        <!---->
+        <!---->
+        <!----><button _ngcontent-c14="" class="btn btn-success" data-dismiss="modal" id="myButton" type="button">Habilitar
+        </button>
+
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div _ngcontent-c14="" aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="miModalInhabilitar" role="dialog" tabindex="-1">
+  <div _ngcontent-c14="" class="modal-dialog" role="document">
+    <div _ngcontent-c14="" class="modal-content">
+      <div _ngcontent-c14="" class="modal-header">
+        <button _ngcontent-c14="" aria-label="Close" class="close" data-dismiss="modal" type="button">
+          <span _ngcontent-c14="" aria-hidden="true">×</span>
+        </button>
+        <h4 _ngcontent-c14="" class="modal-title" id="myModalLabel">Inhabilitar Usuario </h4>
+      </div>
+      <div _ngcontent-c14="" class="modal-body">
+        <p _ngcontent-c14="">¿Seguro que quiere inhabilitar al <br _ngcontent-c14=""> Usuario: , con expediente:
+          ?
+        </p>
+
+        <div _ngcontent-c14="" class="form-group">
+          <div _ngcontent-c14="" class="col-md-2 col-md-offset-2">
+
+          </div>
+        </div>
+      </div>
+      <div _ngcontent-c14="" class="modal-footer">
+        <button _ngcontent-c14="" class="btn btn-default" data-dismiss="modal" type="button">Cancelar</button>
+        <button _ngcontent-c14="" class="btn btn-danger " data-dismiss="modal" id="myButton" type="button">Inhabilitar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div _ngcontent-c14="" aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="idSeleccionarModalidadModal" role="dialog" tabindex="-1">
+  <div _ngcontent-c14="" class="modal-dialog" role="document">
+    <div _ngcontent-c14="" class="modal-content">
+      <div _ngcontent-c14="" class="modal-header">
+        
+        <button _ngcontent-c14="" aria-label="Close" class="close" data-dismiss="modal" type="button">
+          <span _ngcontent-c14="" aria-hidden="true">×</span>
+        </button>
+        <h4 _ngcontent-c14="" class="modal-title" id="myModalLabel">Seleccionar modalidad</h4>
+      </div>
+      <div _ngcontent-c14="" class="modal-body">
+        <p _ngcontent-c14="">Favor seleccione una modalidad</p>
+        <div _ngcontent-c14="" class="form-group">
+            <label _ngcontent-c14="" class="control-label col-md-3" for="modalidad">Modalidad:</label>
+            <div _ngcontent-c14="" class="col-md-6">
+              <select _ngcontent-c14="" class="form-control ng-untouched ng-pristine ng-valid" id="idModalidadSelect">
+                
+                <!----><option _ngcontent-c14="" value="2">DINAMICO</option><option _ngcontent-c14="" value="3">FIJO</option><option _ngcontent-c14="" value="1">GEORREFERENCIA</option><option _ngcontent-c14="" value="7">MASI</option><option _ngcontent-c14="" value="4">TECNICO PREFERIDO</option><option _ngcontent-c14="" value="5">VOLUMEN</option>
+              </select>
+            </div>
+            <p _ngcontent-c14="">&nbsp;</p>
+        </div>
+      </div>
+      <div _ngcontent-c14="" class="modal-footer">
+        <button _ngcontent-c14="" class="btn btn-default" data-dismiss="modal" type="button">Cancelar</button>
+        <button _ngcontent-c14="" class="btn btn-success" data-dismiss="modal" id="myButton" type="button">Aceptar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div _ngcontent-c14="" aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="miModalReiniciaContrasenia" role="dialog" tabindex="-1">
+  <div _ngcontent-c14="" class="modal-dialog" role="document">
+    <div _ngcontent-c14="" class="modal-content">
+      <div _ngcontent-c14="" class="modal-header">
+        <button _ngcontent-c14="" aria-label="Close" class="close" data-dismiss="modal" type="button">
+          <span _ngcontent-c14="" aria-hidden="true">×</span>
+        </button>
+        <h4 _ngcontent-c14="" class="modal-title" id="myModalLabel">Reiniciar Contraseña</h4>
+      </div>
+      <div _ngcontent-c14="" class="modal-body">
+        <p _ngcontent-c14="">¿Seguro que quiere reiniciar la contraseña al <br _ngcontent-c14=""> Usuario: , con expediente:
+          ?
+        </p>
+
+        <div _ngcontent-c14="" class="form-group">
+          <div _ngcontent-c14="" class="col-md-2 col-md-offset-2">
+
+          </div>
+        </div>
+      </div>
+      <div _ngcontent-c14="" class="modal-footer">
+        <button _ngcontent-c14="" class="btn btn-default" data-dismiss="modal" type="button">Cancelar</button>
+        <button _ngcontent-c14="" class="btn btn-primary " data-dismiss="modal" id="myButton" type="button">Reiniciar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div _ngcontent-c14="" aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="miModalReiniciaMac" role="dialog" tabindex="-1">
+  <div _ngcontent-c14="" class="modal-dialog" role="document">
+    <div _ngcontent-c14="" class="modal-content">
+      <div _ngcontent-c14="" class="modal-header">
+        <button _ngcontent-c14="" aria-label="Close" class="close" data-dismiss="modal" type="button">
+          <span _ngcontent-c14="" aria-hidden="true">×</span>
+        </button>
+        <h4 _ngcontent-c14="" class="modal-title" id="myModalLabel">Reiniciar MAC ADDRESS</h4>
+      </div>
+      <div _ngcontent-c14="" class="modal-body">
+        <p _ngcontent-c14="">¿Seguro que quiere reiniciar la mac address al <br _ngcontent-c14=""> Técnico: , con
+          expediente:
+          ?
+        </p>
+
+        <div _ngcontent-c14="" class="form-group">
+          <div _ngcontent-c14="" class="col-md-2 col-md-offset-2">
+
+          </div>
+        </div>
+      </div>
+      <div _ngcontent-c14="" class="modal-footer">
+        <button _ngcontent-c14="" class="btn btn-default" data-dismiss="modal" type="button">Cancelar</button>
+        <button _ngcontent-c14="" class="btn btn-primary " data-dismiss="modal" id="myButton" type="button">Reiniciar</button>
+      </div>
+    </div>
+  </div>
+</div></app-listado-usuario-tecnico>
+
+
+
+
+
+
+
+
+
+
+
+</app-root><!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> --><!-- <script>      var myAppVersionNumber = "0.0.1";    </script>    --><!-- <script src="http://code.jquery.com/jquery.latest.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"><script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> --><!-- <link rel="stylesheet" href="node_modules/ngx-snackbar/bundles/style.css"> --><!-- Footer --><footer class="footer page-footer font-small blue fixed-bottom"><a href="#">SATEC ABC </a>Version: 12.8 DMZ</footer><!-- Footer --><script type="text/javascript" src="inline.4368bfc345ad450705f9.bundle.js"></script><script type="text/javascript" src="polyfills.1524cc4eb18d40fedd11.bundle.js"></script><script type="text/javascript" src="scripts.28f79846239e18912ef3.bundle.js"></script><script type="text/javascript" src="main.e97d5d59565eb89ff4a5.bundle.js"></script></body></html>
